@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <title>Match Maker</title>
+
+    <!-- Connect CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Floating hearts -->
+    <div class="hearts">
+        <span>💜</span>
+        <span>💗</span>
+        <span>💕</span>
+        <span>💖</span>
+        <span>🤍</span>
+        <span>💞</span>
+        <span>💜</span>
+        <span>💗</span>
+    </div>
+
+
+    <div class="container">
+
+        <h1>💜 Love Calculator 💜</h1>
+
+        <p class="intro">
+            Enter two names and discover your compatibility!
+        </p>
+
+        <p class="small-text">
+            *Totally scientific... probably. 😂
+        </p>
+
+
+        <!-- First name -->
+        <label for="name1">Your Name</label>
+
+        <input 
+            type="text" 
+            id="name1" 
+            placeholder="Enter your name"
+        >
+
+
+        <!-- Second name -->
+        <label for="name2">Lover's Name</label>
+
+        <input 
+            type="text" 
+            id="name2" 
+            placeholder="Enter their name"
+        >
+
+
+        <!-- Match button -->
+        <button onclick="calculateMatch()">
+            💕 Calculate Our Match
+        </button>
+
+
+        <!-- Error message -->
+        <p id="error"></p>
+
+
+        <!-- Result -->
+        <div id="result">
+
+            <div id="heart">💗</div>
+
+            <h2 id="names"></h2>
+
+            <h3>
+                Compatibility:
+            </h3>
+
+            <div id="score">
+                0%
+            </div>
+
+            <h2 id="category"></h2>
+
+            <p id="suggestion"></p>
+
+            <p id="sarcasm"></p>
+
+            <button onclick="tryAgain()">
+                🔄 Try Again
+            </button>
+
+        </div>
+
+
+        <p class="footer">
+            Made with 💜 Love !!!
+        </p>
+
+    </div>
+
+
+    <!-- Connect JavaScript file -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

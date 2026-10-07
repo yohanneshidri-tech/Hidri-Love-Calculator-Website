@@ -1,0 +1,382 @@
+/* General page */
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial, sans-serif;
+
+    background-color: #dce2ff;
+
+    color: #686565;
+
+    text-align: center;
+}
+
+
+/* Main container */
+
+.container {
+    width: 450px;
+
+    max-width: 85%;
+
+    margin: 60px auto;
+
+    padding: 35px;
+
+    background-color: rgb(199, 166, 243);
+
+    border: 3px solid #d6a928;
+
+    border-radius: 30px;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* Heading */
+
+h1 {
+    color: #be0404;
+
+    font-size: 36px;
+
+    margin-bottom: 10px;
+}
+
+
+/* Introduction */
+
+.intro {
+    font-size: 18px;
+
+    margin-bottom: 5px;
+}
+
+
+.small-text {
+    font-size: 13px;
+
+    color: gray;
+
+    margin-bottom: 25px;
+}
+
+
+/* Labels */
+
+label {
+    display: block;
+
+    text-align: left;
+
+    margin-left: 15px;
+
+    margin-top: 15px;
+
+    margin-bottom: 7px;
+
+    color: #840404;
+
+    font-weight: bold;
+}
+
+
+/* Input boxes */
+
+input {
+    width: 50%;
+
+    padding: 14px;
+
+    border: 2px solid #d6a928;
+
+    border-radius: 25px;
+
+    font-size: 16px;
+
+    outline: none;
+
+    background-color: #fffdf5;
+}
+
+
+/* Input when clicked */
+
+input:focus {
+    border: 2px solid #6c3b8f;
+
+    box-shadow: 0 0 8px #c9a9e8;
+}
+
+
+/* Main button */
+
+button {
+    width: 95%;
+
+    padding: 14px;
+
+    margin-top: 20px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background-color: #6c3b8f;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+/* Button hover */
+
+button:hover {
+    background-color: #ab2c16;
+}
+
+
+/* Error message */
+
+#error {
+    color: #d12f52;
+
+    font-weight: bold;
+
+    min-height: 20px;
+}
+
+
+/* Result box */
+
+#result {
+    display: none;
+
+    margin-top: 25px;
+
+    padding: 20px;
+
+    border-radius: 25px;
+
+    background-color: #fff;
+
+    border: 2px solid #d6a928;
+}
+
+
+/* Result heart */
+
+#heart {
+    font-size: 55px;
+    display: inline-block;
+}
+.pumping-heart {
+    animation: pump 0.8s infinite;
+}
+@Keyframes pump {
+
+    0% {
+        transform: scale(1);
+}
+50%{
+    transform: scale(1.35);
+}
+100% {
+    transform: scale(1);
+}
+}
+
+.score-gray {
+    color: #777777;
+
+    }
+    .score-yellow {
+        color: #d99a00;
+}
+.score-pink {
+    color: #e85c78;
+}
+.score-red {
+    color: #e0003c;
+}
+
+/* Names */
+
+#names {
+    color: #6c3b8f;
+}
+
+
+/* Score */
+
+#score {
+    font-size: 60px;
+
+    font-weight: bold;
+
+    
+
+    margin: 10px;
+}
+
+
+/* Suggestion */
+
+#suggestion {
+    font-size: 17px;
+
+    line-height: 1.5;
+}
+
+
+/* Sarcasm */
+
+#sarcasm {
+    background-color: #f4eaff;
+
+    padding: 12px;
+
+    border-radius: 15px;
+
+    font-style: italic;
+
+    line-height: 1.5;
+}
+
+
+/* Try again button */
+
+#result button {
+    background-color: white;
+
+    color: #6c3b8f;
+
+    border: 2px solid #6c3b8f;
+}
+
+
+/* Footer */
+
+.footer {
+    margin-top: 25px;
+
+    font-size: 12px;
+
+    color: gray;
+}
+
+
+/* ----------------------------- */
+/* Floating hearts */
+/* ----------------------------- */
+
+.hearts {
+    position: fixed;
+
+    width: 100%;
+
+    height: 100%;
+
+    left: 0;
+
+    top: 0;
+
+    pointer-events: none;
+
+    overflow: hidden;
+}
+
+
+.hearts span {
+    position: absolute;
+
+    bottom: -50px;
+
+    font-size: 25px;
+
+    animation: float 8s linear infinite;
+}
+
+
+/* Different positions */
+
+.hearts span:nth-child(1) {
+    left: 10%;
+
+    animation-delay: 1s;
+}
+
+.hearts span:nth-child(2) {
+    left: 20%;
+
+    animation-delay: 3s;
+}
+
+.hearts span:nth-child(3) {
+    left: 35%;
+
+    animation-delay: 5s;
+}
+
+.hearts span:nth-child(4) {
+    left: 50%;
+
+    animation-delay: 2s;
+}
+
+.hearts span:nth-child(5) {
+    left: 65%;
+
+    animation-delay: 4s;
+}
+
+.hearts span:nth-child(6) {
+    left: 75%;
+
+    animation-delay: 1s;
+}
+
+.hearts span:nth-child(7) {
+    left: 85%;
+
+    animation-delay: 6s;
+}
+
+.hearts span:nth-child(8) {
+    left: 95%;
+
+    animation-delay: 3s;
+}
+
+
+/* Floating animation */
+
+@keyframes float {
+
+    0% {
+        transform: translateY(0);
+
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-110vh);
+
+        opacity: 0;
+    }
+}
